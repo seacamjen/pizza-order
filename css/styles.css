@@ -1,5 +1,10 @@
 .well h1 {
   text-align: center;
+  color: red;
+}
+
+body {
+  background-color: #eaedf2;
 }
 
 .pizzaSelector > input{
@@ -29,7 +34,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: gray;
+    background-color: white;
 }
 .navbar #rightNav #navbarTotal {
   font-size: 30px;

@@ -26,42 +26,54 @@
         <form id="pizzaSelections">
           <div class="col-md-9">
             <div class="form-group">
-              <h2>Select Size of Pizza</h2>
-              <div class="radio-inline">
-                  <label class="pizzaSelector">
-                    <input type="radio" name="pizzaSize" value="sm"><img src="img/pizza.jpg" alt="Pepperoni Small Pizza" style="width:150px;height:auto"> <br>Personal 10in
-                  </label>
-              </div>
-              <div class="radio-inline">
-                <label class="pizzaSelector">
-                  <input type="radio" name="pizzaSize" value="med"><img src="img/pizza.jpg" alt="Pepperoni Small Pizza" style="width:250px;height:auto"> <br> Medium 14in
-                </label>
-              </div>
-              <div class="radio-inline">
-                <label class="pizzaSelector">
-                  <input type="radio" name="pizzaSize" value="lrg"><img src="img/pizza.jpg" alt="Pepperoni Small Pizza" style="width:300px;height:auto"> <br>Large 18in
-                </label>
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h2 class="panel-title">Select Size of Pizza</h2>
+                </div>
+                <div class="panel-body">
+                  <div class="radio-inline">
+                      <label class="pizzaSelector">
+                        <input type="radio" name="pizzaSize" value="sm"><img src="img/pizza.jpg" alt="Pepperoni Small Pizza" style="width:150px;height:auto"> <br>Personal 10in
+                      </label>
+                  </div>
+                  <div class="radio-inline">
+                    <label class="pizzaSelector">
+                      <input type="radio" name="pizzaSize" value="med"><img src="img/pizza.jpg" alt="Pepperoni Small Pizza" style="width:250px;height:auto"> <br> Medium 14in
+                    </label>
+                  </div>
+                  <div class="radio-inline">
+                    <label class="pizzaSelector">
+                      <input type="radio" name="pizzaSize" value="lrg"><img src="img/pizza.jpg" alt="Pepperoni Small Pizza" style="width:300px;height:auto"> <br>Large 18in
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="form-group">
-              <p>Select Toppings:</p>
-              <input type="checkbox" name="pizza-topping" value="1"> Pepperoni<br>
-              <input type="checkbox" name="pizza-topping" value="2"> Sausage<br>
-              <input type="checkbox" name="pizza-topping" value="1"> Extra Cheese<br>
-              <input type="checkbox" name="pizza-topping" value="1"> Bacon<br>
-              <input type="checkbox" name="pizza-topping" value="2"> Pineapple<br>
-              <input type="checkbox" name="pizza-topping" value="1"> Spinach<br>
-              <input type="checkbox" name="pizza-topping" value="1"> Onions<br>
-              <input type="checkbox" name="pizza-topping" value="2"> Ham<br>
-              <input type="checkbox" name="pizza-topping" value="1"> Mushrooms<br>
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <p class="panel-title">Select Toppings:</p>
+                </div>
+                <div class="panel-body">
+                  <input type="checkbox" name="pizza-topping" value="1"> Pepperoni<br>
+                  <input type="checkbox" name="pizza-topping" value="2"> Sausage<br>
+                  <input type="checkbox" name="pizza-topping" value="1"> Extra Cheese<br>
+                  <input type="checkbox" name="pizza-topping" value="1"> Bacon<br>
+                  <input type="checkbox" name="pizza-topping" value="2"> Pineapple<br>
+                  <input type="checkbox" name="pizza-topping" value="1"> Spinach<br>
+                  <input type="checkbox" name="pizza-topping" value="1"> Onions<br>
+                  <input type="checkbox" name="pizza-topping" value="2"> Ham<br>
+                  <input type="checkbox" name="pizza-topping" value="1"> Mushrooms<br><br><br>
+                  <button type="submit" name="btn">Total Cost</button>
+                </div>
+              </div>
             </div>
-            <div id="otherPizza">
+          </div>
 
-            </div>
-            <button type="submit" name="btn">Total Cost</button>
-            <!-- <span class="btn btn-primary" id="add-pizza">More Pizza</span> -->
+
+
           </div>
         </form>
       </div>
