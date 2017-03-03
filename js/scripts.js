@@ -3,6 +3,7 @@ function Pizza (circumference) {
   this.circumference = circumference;
   this.circumferenceTotal = 0;
   this.topping = 0;
+  this.totalPrice = 0;
 }
 
 Pizza.prototype.addToppingOne = function () {
@@ -25,9 +26,9 @@ Pizza.prototype.largeSize = function () {
   this.circumferenceTotal += 20;
 }
 
-// Pizza.prototype.costOfPizza = function () {
-//   (add $1 per topping);
-// }
+Pizza.prototype.costOfPizza = function () {
+  this.totalPrice = this.circumferenceTotal + this.topping;
+}
 
 
 //User Interface
@@ -47,7 +48,6 @@ $(function () {
       pricingPizza.largeSize();
     }
 
-
     $("input:checkbox[name=pizza-topping]:checked").each(function(){
       var topping = parseInt($(this).val());
       if (topping === 1) {
@@ -56,9 +56,6 @@ $(function () {
         pricingPizza.addToppingTwo();
       }
     });
-
-
-
 
 
     console.log(pricingPizza);

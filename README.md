@@ -15,11 +15,15 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 
 2. Program increases price of each topping
   * Example Input: Pepperoni
-  * Example Output: + $1.00
+  * Example Output: $1
 
 3. Program differentiates price on size of Pizza
   * Example Input: Small Pizza, Large Pizza
-  * Example Output: $15.00, $25.00
+  * Example Output: $15, $25
+
+4. Program totals price according to size of Pizza and toppings
+  * Example Input: Small Pizza, Pepperoni
+  * Example Output: $16
 
 
 ## Setup/Installation Requirements
