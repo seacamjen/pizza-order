@@ -1,6 +1,7 @@
-/*#myCheckbox1, #myCheckbox2, #myCheckbox3 {
-  display: none;
-}*/
+
+.pizzaSelector {
+  text-align: center;
+}
 
 .well h1 {
   text-align: center;
@@ -24,7 +25,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: gray;
 }
 .navbar #rightNav #navbarTotal {
   font-size: 30px;

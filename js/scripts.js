@@ -31,41 +31,52 @@ Pizza.prototype.costOfPizza = function () {
   this.totalPrice = this.circumferenceTotal + this.topping;
 }
 
-
+function resetFields(){
+  $("input#new-first-name").val("");
+  $("input#new-phone").val("");
+}
 //User Interface
 $(function () {
 
   $("#add-pizza").click(function() {
-    $("#otherPizza").append('<div class="col-md-3">' +
+    $("#otherPizza").append('<div class="col-md-9">' +
                               '<div class="form-group">' +
-                                '<div class="panel panel-success">' +
+                                '<div class="panel panel-danger">' +
                                   '<div class="panel-heading">' +
                                     '<h2 class="panel-title">Select Size of Pizza</h2>' +
                                   '</div>' +
                                   '<div class="panel-body">' +
-                              '<input type="checkbox" name="pizza-size" value="10"> Small<br>' +
-                              '<input type="checkbox" name="pizza-size" value="17"> Medium<br>' +
-                              '<input type="checkbox" name="pizza-size" value="25"> Large<br>' +
+                                  '<div class="pizzaSelector">'  +
+                                  '<label class="checkbox-inline" for="myCheckbox1"><img src="img/pizza.jpg" alt="pepperoni pizza" height="100" width="120">' + '<br>' + 'Small 10in' + '<br>' +
+                                    '<input type="checkbox" id="myCheckbox1" name="pizza-size" value="10">' +
+                                  '</label>' +
+                                  '<label class="checkbox-inline" for="myCheckbox2"><img src="img/pizza.jpg" alt="pepperoni pizza" height="150" width="180">' + '<br>' + 'Medium 15in' + '<br>' +
+                                    '<input type="checkbox" id="myCheckbox2"name="pizza-size" value="17">' +
+                                  '</label>' +
+                                  '<label class="checkbox-inline" for="myCheckbox3"><img src="img/pizza.jpg" alt="pepperoni pizza" height="200" width="240">' + '<br>' + 'Large 20in' + '<br>' +
+                                    '<input type="checkbox" id="myCheckbox3" name="pizza-size" value="25">' +
+                                '</label>' +
+                                '</div>' +
                                 '</div>' +
                                 '</div>' +
                                 '</div>' +
                                 '</div>' +
                                 '<div class="col-md-3">' +
                               '<div class="form-group">' +
-                              '<div class="panel panel-success">' +
+                              '<div class="panel panel-danger">' +
                                 '<div class="panel-heading">' +
                                   '<p class="panel-title">Select Toppings:</p>' +
                                 '</div>' +
                                 '<div class="panel-body">' +
-                                '<input type="checkbox" name="pizza-topping" value="1">Pepperoni<br>' +
-                                '<input type="checkbox" name="pizza-topping" value="2">Sausage<br>' +
-                                '<input type="checkbox" name="pizza-topping" value="1">Extra Cheese<br>' +
-                                '<input type="checkbox" name="pizza-topping" value="1">Bacon<br>' +
-                                '<input type="checkbox" name="pizza-topping" value="2">Pineapple<br>' +
-                                '<input type="checkbox" name="pizza-topping" value="1">Spinach<br>' +
-                                '<input type="checkbox" name="pizza-topping" value="1">Onions<br>' +
-                                '<input type="checkbox" name="pizza-topping" value="2">Ham<br>' +
-                                '<input type="checkbox" name="pizza-topping" value="1">Mushrooms<br>' +
+                                '<input type="checkbox" name="pizza-topping" value="1"> Pepperoni<br>' +
+                                '<input type="checkbox" name="pizza-topping" value="2"> Sausage<br>' +
+                                '<input type="checkbox" name="pizza-topping" value="1"> Extra Cheese<br>' +
+                                '<input type="checkbox" name="pizza-topping" value="1"> Bacon<br>' +
+                                '<input type="checkbox" name="pizza-topping" value="2"> Pineapple<br>' +
+                                '<input type="checkbox" name="pizza-topping" value="1"> Spinach<br>' +
+                                '<input type="checkbox" name="pizza-topping" value="1"> Onions<br>' +
+                                '<input type="checkbox" name="pizza-topping" value="2"> Ham<br>' +
+                                '<input type="checkbox" name="pizza-topping" value="1"> Mushrooms<br><br><br>' +
                               '</div>' +
                               '</div>' +
                               '</div>' +
@@ -105,6 +116,6 @@ $(function () {
     pricingPizza.costOfPizza();
 
     $("#navbarTotal").html("  " + pricingPizza.firstName + " your total is $" + pricingPizza.totalPrice);
-    console.log(pricingPizza);
+    resetFields();
   });
 });
