@@ -1,13 +1,25 @@
-
 .pizzaSelector {
   text-align: center;
 }
-
-.well h1 {
-  text-align: center;
-  color: red;
+.image{
+  background-image: url("../img/logo.png");
+  opacity: .7;
+}
+.image p {
+  color: black;
+  font-size: 100px;
 }
 
+.col-md-9 .panel-body {
+  background-image: url("../img/logo.jpeg");
+}
+
+.col-md-3 .panel-body{
+  font-size: 16px;
+  font-weight: bold;
+  color: #a01a00;
+  background-image: url("../img/truck.jpeg");
+}
 body {
   background-color: #eaedf2;
 }
