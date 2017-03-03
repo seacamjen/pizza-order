@@ -57,6 +57,9 @@ $(function () {
       }
     });
 
+    pricingPizza.costOfPizza();
+
+    $("#showTotal").html("<h3> $" + pricingPizza.totalPrice + "</h3>");
 
     console.log(pricingPizza);
   });
