@@ -38,16 +38,24 @@
       </div>
       <div class="row">
         <form id="pizzaSelections">
-          <div class="col-md-3">
+          <div class="col-md-9">
             <div class="form-group">
               <div class="panel panel-success">
                 <div class="panel-heading">
                   <h2 class="panel-title">Select Size of Pizza</h2>
                 </div>
                 <div class="panel-body">
-                  <input type="checkbox" name="pizza-size" value="10"> Small<br>
-                  <input type="checkbox" name="pizza-size" value="17"> Medium<br>
-                  <input type="checkbox" name="pizza-size" value="25"> Large<br>
+                  <div class="pizzaSelector">
+                    <label class="checkbox-inline" for="myCheckbox1"><img src="img/pizza.jpg" alt="pepperoni pizza" height="100" width="120">Small
+                      <input type="checkbox" id="myCheckbox1" name="pizza-size" value="10">
+                    </label>
+                    <label class="checkbox-inline" for="myCheckbox2"><img src="img/pizza.jpg" alt="pepperoni pizza" height="150" width="180">Medium
+                      <input type="checkbox" id="myCheckbox2"name="pizza-size" value="17">
+                    </label>
+                    <label class="checkbox-inline" for="myCheckbox3"><img src="img/pizza.jpg" alt="pepperoni pizza" height="200" width="240">Large
+                      <input type="checkbox" id="myCheckbox3" name="pizza-size" value="25">
+                  </label>
+                  </div>
                 </div>
               </div>
             </div>

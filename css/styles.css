@@ -1,3 +1,7 @@
+/*#myCheckbox1, #myCheckbox2, #myCheckbox3 {
+  display: none;
+}*/
+
 .well h1 {
   text-align: center;
   color: red;
