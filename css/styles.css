@@ -1,3 +1,21 @@
 .jumbotron h1 {
   text-align: center;
 }
+
+.pizzaSelector > input{
+  visibility: hidden;
+  position: absolute;
+}
+
+.pizzaSelector > input + img{
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.pizzaSelector > input:checked + img{
+  border: 2px solid #f00;
+}
+
+.radio-inline label {
+  text-align: center;
+}

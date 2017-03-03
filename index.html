@@ -5,26 +5,31 @@
    <link rel="stylesheet" href="css/styles.css" type="text/css">
    <script src="js/jquery-3.1.1.js"></script>
    <script src="js/scripts.js"></script>
-    <title>Pizza Planet</title>
+    <title>Planet Pizza</title>
   </head>
   <body>
     <div class="jumbotron">
-      <h1>Welcome to Pizza Planet!</h1>
+      <h1>Welcome to Planet Pizza!</h1>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
           <form id="pizzaSelections">
             <div class="form-group">
               <h2>Select Size of Pizza</h2>
-              <div class="radio">
-                  <label><input type="radio" name="pizzaSize" value="sm">Personal</label>
+              <div class="radio-inline">
+                  <label class="pizzaSelector">
+                    <input type="radio" name="pizzaSize" value="sm"><img src="img/pizza.jpg" alt="Pepperoni Small Pizza" style="width:150px;height:auto"> <br>Personal 10in
+                  </label>
               </div>
-              <div class="radio">
-                <label><input type="radio" name="pizzaSize" value="med">Medium</label>
+              <div class="radio-inline">
+                <label class="pizzaSelector">
+                  <input type="radio" name="pizzaSize" value="med"><img src="img/pizza.jpg" alt="Pepperoni Small Pizza" style="width:250px;height:auto"> <br> Medium 14in
+                </label>
               </div>
-              <div class="radio">
-                <label><input type="radio" name="pizzaSize" value="lrg">Large</label>
+              <div class="radio-inline">
+                <label class="pizzaSelector">
+                  <input type="radio" name="pizzaSize" value="lrg"><img src="img/pizza.jpg" alt="Pepperoni Small Pizza" style="width:300px;height:auto"> <br>Large 18in
+                </label>
               </div>
             </div>
             <div class="form-group">
@@ -39,11 +44,10 @@
               <input type="checkbox" name="pizza-topping" value="2">Ham<br>
               <input type="checkbox" name="pizza-topping" value="1">Mushrooms<br>
             </div>
-            <span class="btn btn-primary" id="add-pizza">Another Pizza</span>
+            <!-- <span class="btn btn-primary" id="add-pizza">Another Pizza</span> -->
 
             <button type="submit" name="btn">Total Cost</button>
           </form>
-        </div>
         <!-- <div id="otherPizza">
 
         </div> -->
