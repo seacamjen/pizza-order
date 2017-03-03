@@ -1,6 +1,12 @@
+.otherLinks {
+  border: 3px solid black;
+  padding: 4px;
+}
+
 .pizzaSelector {
   text-align: center;
 }
+
 .image{
   background-image: url("../img/logo.png");
   opacity: .7;
