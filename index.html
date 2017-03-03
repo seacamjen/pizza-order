@@ -8,12 +8,23 @@
     <title>Planet Pizza</title>
   </head>
   <body>
-    <div class="jumbotron">
-      <h1>Welcome to Planet Pizza!</h1>
+    <div class="container">
+      <div class="row">
+        <div class="navbar">
+          <ul>
+            <li id="leftNav">Planet Pizza</li>
+            <li id="rightNav">Grand Total:<span id="navbarTotal"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="well">
+        <h1>Welcome to Planet Pizza!</h1>
+      </div>
     </div>
     <div class="container">
       <div class="row">
-          <form id="pizzaSelections">
+        <form id="pizzaSelections">
+          <div class="col-md-9">
             <div class="form-group">
               <h2>Select Size of Pizza</h2>
               <div class="radio-inline">
@@ -32,28 +43,27 @@
                 </label>
               </div>
             </div>
+          </div>
+          <div class="col-md-3">
             <div class="form-group">
-              <p>What Type of Topping would you like:</p>
-              <input type="checkbox" name="pizza-topping" value="1">Pepperoni<br>
-              <input type="checkbox" name="pizza-topping" value="2">Sausage<br>
-              <input type="checkbox" name="pizza-topping" value="1">Extra Cheese<br>
-              <input type="checkbox" name="pizza-topping" value="1">Bacon<br>
-              <input type="checkbox" name="pizza-topping" value="2">Pineapple<br>
-              <input type="checkbox" name="pizza-topping" value="1">Spinach<br>
-              <input type="checkbox" name="pizza-topping" value="1">Onions<br>
-              <input type="checkbox" name="pizza-topping" value="2">Ham<br>
-              <input type="checkbox" name="pizza-topping" value="1">Mushrooms<br>
+              <p>Select Toppings:</p>
+              <input type="checkbox" name="pizza-topping" value="1"> Pepperoni<br>
+              <input type="checkbox" name="pizza-topping" value="2"> Sausage<br>
+              <input type="checkbox" name="pizza-topping" value="1"> Extra Cheese<br>
+              <input type="checkbox" name="pizza-topping" value="1"> Bacon<br>
+              <input type="checkbox" name="pizza-topping" value="2"> Pineapple<br>
+              <input type="checkbox" name="pizza-topping" value="1"> Spinach<br>
+              <input type="checkbox" name="pizza-topping" value="1"> Onions<br>
+              <input type="checkbox" name="pizza-topping" value="2"> Ham<br>
+              <input type="checkbox" name="pizza-topping" value="1"> Mushrooms<br>
             </div>
-            <!-- <span class="btn btn-primary" id="add-pizza">Another Pizza</span> -->
+            <div id="otherPizza">
 
+            </div>
             <button type="submit" name="btn">Total Cost</button>
-          </form>
-        <!-- <div id="otherPizza">
-
-        </div> -->
-      </div>
-      <div id="showTotal">
-
+            <!-- <span class="btn btn-primary" id="add-pizza">More Pizza</span> -->
+          </div>
+        </form>
       </div>
     </div>
   </body>

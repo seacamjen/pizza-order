@@ -1,4 +1,4 @@
-.jumbotron h1 {
+.well h1 {
   text-align: center;
 }
 
@@ -18,4 +18,32 @@
 
 .radio-inline label {
   text-align: center;
+}
+
+.navbar {
+  color: red;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+.navbar #rightNav #navbarTotal {
+  font-size: 30px;
+  color: white;
+}
+.navbar #rightNav {
+    float: right;
+    font-size: 25px;
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+.navbar #leftNav {
+  float: left;
+  font-size: 30px;
+  font-family: fantasy;
 }

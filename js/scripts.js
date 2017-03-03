@@ -34,36 +34,32 @@ Pizza.prototype.costOfPizza = function () {
 //User Interface
 $(function () {
 
-  $("add-pizza").click(function() {
-    $("#otherPizza").append('<div class="col-md-6">' +
-    '<form id="pizzaSelections">' +
-      '<div class="form-group">' +
-        '<h2>Select Size of Pizza</h2>' +
-        '<div class="radio">' +
-            '<label>' + '<input type="radio" name="pizzaSize" value="sm">Personal</label>' +
-        '</div>' +
-        '<div class="radio">' +
-          '<label>' + '<input type="radio" name="pizzaSize" value="med">Medium</label>' +
-        '</div>' +
-        '<div class="radio">' +
-          '<label>' + '<input type="radio" name="pizzaSize" value="lrg">Large</label>' +
-        '</div>' +
-      '</div>' +
-      '<div class="form-group">' +
-        '<p>What Type of Topping would you like:</p>' +
-        '<input type="checkbox" name="pizza-topping" value="1">Pepperoni<br>' +
-        '<input type="checkbox" name="pizza-topping" value="2">Sausage<br>' +
-        '<input type="checkbox" name="pizza-topping" value="1">Extra Cheese<br>' +
-        '<input type="checkbox" name="pizza-topping" value="1">Bacon<br>' +
-        '<input type="checkbox" name="pizza-topping" value="2">Pineapple<br>' +
-        '<input type="checkbox" name="pizza-topping" value="1">Spinach<br>' +
-        '<input type="checkbox" name="pizza-topping" value="1">Onions<br>' +
-        '<input type="checkbox" name="pizza-topping" value="2">Ham<br>' +
-        '<input type="checkbox" name="pizza-topping" value="1">Mushrooms<br>' +
-      '</div>' +
-    '</form>' +
-  '</div>'); 
-  });
+  // $("#add-pizza").click(function() {
+  //   $("#otherPizza").append('<div class="form-group">' +
+  //                               '<h2>Select Size of Pizza</h2>' +
+  //                               '<div class="radio">' +
+  //                                   '<label><input type="radio" name="pizzaSize" value="sm">Personal</label>' +
+  //                               '</div>' +
+  //                               '<div class="radio">' +
+  //                                 '<label><input type="radio" name="pizzaSize" value="med">Medium</label>' +
+  //                               '</div>' +
+  //                               '<div class="radio">' +
+  //                                 '<label><input type="radio" name="pizzaSize" value="lrg">Large</label>' +
+  //                               '</div>' +
+  //                             '</div>' +
+  //                             '<div class="form-group">' +
+  //                               '<p>What Type of Topping would you like:</p>' +
+  //                               '<input type="checkbox" name="pizza-topping" value="1">Pepperoni<br>' +
+  //                               '<input type="checkbox" name="pizza-topping" value="2">Sausage<br>' +
+  //                               '<input type="checkbox" name="pizza-topping" value="1">Extra Cheese<br>' +
+  //                               '<input type="checkbox" name="pizza-topping" value="1">Bacon<br>' +
+  //                               '<input type="checkbox" name="pizza-topping" value="2">Pineapple<br>' +
+  //                               '<input type="checkbox" name="pizza-topping" value="1">Spinach<br>' +
+  //                               '<input type="checkbox" name="pizza-topping" value="1">Onions<br>' +
+  //                               '<input type="checkbox" name="pizza-topping" value="2">Ham<br>' +
+  //                               '<input type="checkbox" name="pizza-topping" value="1">Mushrooms<br>' +
+  //                             '</div>');
+  // });
 
   $("#pizzaSelections").submit(function () {
     event.preventDefault();
@@ -92,7 +88,14 @@ $(function () {
     pricingPizza.costOfPizza();
 
     $("#showTotal").html("<h3> $" + pricingPizza.totalPrice + "</h3>");
-
+    $("#navbarTotal").html("$" + pricingPizza.totalPrice);
     console.log(pricingPizza);
   });
 });
+
+
+                        // '<select class="form-control" id="pizzaSizeDrop">' +
+                        //   '<option value="sm">Personal</option>' +
+                        //   '<option value="med">Medium</option>' +
+                        //   '<option value="lrg">Large</option>' +
+                        // '</select>'
