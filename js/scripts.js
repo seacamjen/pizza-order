@@ -1,7 +1,8 @@
 //Business Logic
-function Pizza (firstName, phoneNumber) {
+function Pizza (firstName, phoneNumber, address) {
   this.firstName = firstName;
   this.phoneNumber = phoneNumber;
+  this.address = address;
   this.circumferenceTotal = 0;
   this.topping = 0;
   this.totalPrice = 0;
@@ -30,13 +31,12 @@ Pizza.prototype.largeSize = function () {
 Pizza.prototype.costOfPizza = function () {
   this.totalPrice = this.circumferenceTotal + this.topping;
 }
-
-function resetFields(){
-  $("input#new-first-name").val("");
-  $("input#new-phone").val("");
-}
 //User Interface
 $(function () {
+  $("#delivery").click(function(){
+    $("#deliveryAddress").show();
+  });
+
 
   $("#add-pizza").click(function() {
     $("#otherPizza").append('<div class="col-md-9">' +
@@ -89,9 +89,9 @@ $(function () {
 
     var inputtedFirstName = $("input#new-first-name").val();
     var inputtedPhoneNumber = $("input#new-phone").val();
+    var inputtedAddress = $("input#delivery").val();
 
-    var pricingPizza = new Pizza (inputtedFirstName, inputtedPhoneNumber);
-
+    var pricingPizza = new Pizza (inputtedFirstName, inputtedPhoneNumber, inputtedAddress);
 
     $("input:checkbox[name=pizza-size]:checked").each(function(){
       var topping = parseInt($(this).val());
@@ -116,6 +116,6 @@ $(function () {
     pricingPizza.costOfPizza();
 
     $("#navbarTotal").html("  " + pricingPizza.firstName + " your total is $" + pricingPizza.totalPrice);
-    resetFields();
+    $("#bottomTotal").html("  " + pricingPizza.firstName + " your total is $" + pricingPizza.totalPrice);
   });
 });

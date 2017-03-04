@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row orderForm">
         <div class="form-group">
           <div class="row">
             <h2>Order Online Now:</h2>
@@ -52,10 +52,17 @@
               <label for="new-phone">Phone Number</label>
               <input type="text" class="form-control" id="new-phone">
             </div>
+            <div id="deliveryAddress">
+              <div class="col-sm-4">
+                <label for="new-addres">Address</label>
+                <input type="text" class="form-control" id="new-address" placeholder="123 Main Street, Los Angeles, CA, 90210">
+              </div>
+            </div>
           </div>
+          <button type="click" id="delivery" name="button">Delivery</button>
         </div>
       </div>
-      <div class="row">
+      <div class="row orderForm">
         <form id="pizzaSelections">
           <div class="col-md-9">
             <div class="form-group">
@@ -106,6 +113,7 @@
           <button type="submit" name="btn">Total Cost</button>
         </form>
       </div>
+      <span id="bottomTotal"></span>
     </div>
   </body>
 </html>
