@@ -7,6 +7,10 @@
   font-size: 30px;
 }
 
+#delivery-button {
+    align-items: center;
+}
+
 #deliveryAddress {
   display: none;
 }
@@ -35,14 +39,14 @@
 }
 
 .col-md-9 .panel-body {
-  background-image: url("../img/logo.jpeg");
+  background-color: #ff8c19;
 }
 
 .col-md-3 .panel-body{
   font-size: 16px;
   font-weight: bold;
   color: #a01a00;
-  background-image: url("../img/truck.jpeg");
+  background-color: lightgray;
 }
 body {
   background-color: #eaedf2;

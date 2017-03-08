@@ -47,13 +47,13 @@ $(function () {
                                   '</div>' +
                                   '<div class="panel-body">' +
                                   '<div class="pizzaSelector">'  +
-                                  '<label class="checkbox-inline" for="myCheckbox1"><img src="img/pizza.jpg" alt="pepperoni pizza" height="100" width="120">' + '<br>' + 'Small 10in' + '<br>' +
+                                  '<label class="checkbox-inline" for="myCheckbox1"><img src="img/pizza.jpg" alt="pepperoni pizza" height="100" width="120">' + '<br>' + 'Small 10in $10' + '<br>' +
                                     '<input type="checkbox" id="myCheckbox1" name="pizza-size" value="10">' +
                                   '</label>' +
-                                  '<label class="checkbox-inline" for="myCheckbox2"><img src="img/pizza.jpg" alt="pepperoni pizza" height="150" width="180">' + '<br>' + 'Medium 15in' + '<br>' +
+                                  '<label class="checkbox-inline" for="myCheckbox2"><img src="img/pizza.jpg" alt="pepperoni pizza" height="150" width="180">' + '<br>' + 'Medium 15in $17' + '<br>' +
                                     '<input type="checkbox" id="myCheckbox2"name="pizza-size" value="17">' +
                                   '</label>' +
-                                  '<label class="checkbox-inline" for="myCheckbox3"><img src="img/pizza.jpg" alt="pepperoni pizza" height="200" width="240">' + '<br>' + 'Large 20in' + '<br>' +
+                                  '<label class="checkbox-inline" for="myCheckbox3"><img src="img/pizza.jpg" alt="pepperoni pizza" height="200" width="240">' + '<br>' + 'Large 20in $25' + '<br>' +
                                     '<input type="checkbox" id="myCheckbox3" name="pizza-size" value="25">' +
                                 '</label>' +
                                 '</div>' +

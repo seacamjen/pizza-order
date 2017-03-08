@@ -24,33 +24,17 @@
       </div>
     </div>
     <div class="container">
-      <div class="row otherLinks">
-        <div class=col-sm-6>
-          <div class="talkFood">
-            <h3>Intergalactic Foods</h3>
-            <a href="http://www.disneyfoodblog.com/2010/05/12/disneylands-redd-rocketts-pizza-port/"><img src="img/talkingfood.gif" alt="hamburger and drink containers talking"></a>
-          </div>
-        </div>
-        <div class=col-sm-6>
-          <div class="driveBy">
-            <h3>Directions</h3>
-            <a href="https://www.google.com/maps/place/Redd+Rockett's+Pizza+Port/@33.8115764,-117.9172179,153m/data=!3m1!1e3!4m5!3m4!1s0x80dcd7daed9c332b:0x82b760851100455e!8m2!3d33.81166!4d-117.916833"><img src="img/pizzaplanetarrive.gif" alt="hamburger and drink containers talking"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
       <div class="row orderForm">
         <div class="form-group">
           <div class="row">
             <h2>Order Online Now:</h2>
             <div class="col-sm-3">
               <label for="new-first-name">First name</label>
-              <input type="text" class="form-control" id="new-first-name" autofocus>
+              <input required type="text" class="form-control" id="new-first-name">
             </div>
             <div class="col-sm-3">
               <label for="new-phone">Phone Number</label>
-              <input type="text" class="form-control" id="new-phone">
+              <input required type="number" class="form-control" id="new-phone">
             </div>
             <div id="deliveryAddress">
               <div class="col-sm-4">
@@ -59,7 +43,9 @@
               </div>
             </div>
           </div>
-          <button type="click" id="delivery" name="button">Delivery</button>
+          <div id="delivery-button">
+            <button type="click" id="delivery" name="button" style="float: right;">Delivery</button>
+          </div>
         </div>
       </div>
       <div class="row orderForm">
@@ -72,13 +58,13 @@
                 </div>
                 <div class="panel-body">
                   <div class="pizzaSelector">
-                    <label class="checkbox-inline" for="myCheckbox1"><img src="img/pizza.jpg" alt="pepperoni pizza" height="100" width="120"><br>Small 10in <br>
+                    <label class="checkbox-inline" for="myCheckbox1"><img src="img/pizza.jpg" alt="pepperoni pizza" height="100" width="120"><br>Small 10in $10<br>
                       <input type="checkbox" id="myCheckbox1" name="pizza-size" value="10">
                     </label>
-                    <label class="checkbox-inline" for="myCheckbox2"><img src="img/pizza.jpg" alt="pepperoni pizza" height="150" width="180"><br>Medium 15in <br>
+                    <label class="checkbox-inline" for="myCheckbox2"><img src="img/pizza.jpg" alt="pepperoni pizza" height="150" width="180"><br>Medium 15in $17<br>
                       <input type="checkbox" id="myCheckbox2"name="pizza-size" value="17">
                     </label>
-                    <label class="checkbox-inline" for="myCheckbox3"><img src="img/pizza.jpg" alt="pepperoni pizza" height="200" width="240"><br>Large 20in <br>
+                    <label class="checkbox-inline" for="myCheckbox3"><img src="img/pizza.jpg" alt="pepperoni pizza" height="200" width="240"><br>Large 20in $25<br>
                       <input type="checkbox" id="myCheckbox3" name="pizza-size" value="25">
                   </label>
                   </div>
@@ -93,15 +79,17 @@
                   <p class="panel-title">Select Toppings:</p>
                 </div>
                 <div class="panel-body">
+                  <p>$1 each</p>
                   <input type="checkbox" name="pizza-topping" value="1"> Pepperoni<br>
-                  <input type="checkbox" name="pizza-topping" value="2"> Sausage<br>
+                  <input type="checkbox" name="pizza-topping" value="1"> Mushrooms<br>
                   <input type="checkbox" name="pizza-topping" value="1"> Extra Cheese<br>
                   <input type="checkbox" name="pizza-topping" value="1"> Bacon<br>
-                  <input type="checkbox" name="pizza-topping" value="2"> Pineapple<br>
                   <input type="checkbox" name="pizza-topping" value="1"> Spinach<br>
                   <input type="checkbox" name="pizza-topping" value="1"> Onions<br>
+                  <p>$2 each</p>
+                  <input type="checkbox" name="pizza-topping" value="2"> Pineapple<br>
                   <input type="checkbox" name="pizza-topping" value="2"> Ham<br>
-                  <input type="checkbox" name="pizza-topping" value="1"> Mushrooms<br> <br>
+                  <input type="checkbox" name="pizza-topping" value="2"> Sausage<br>
                 </div>
               </div>
             </div>
@@ -114,6 +102,22 @@
         </form>
       </div>
       <span id="bottomTotal"></span>
+    </div>
+    <div class="container">
+      <div class="row otherLinks">
+        <div class=col-sm-6>
+          <div class="talkFood">
+            <h3>Intergalactic Foods</h3>
+            <a href="http://www.disneyfoodblog.com/2010/05/12/disneylands-redd-rocketts-pizza-port/"><img src="img/talkingfood.gif" alt="hamburger and drink containers talking"></a>
+          </div>
+        </div>
+        <div class=col-sm-6>
+          <div class="driveBy">
+            <h3>Directions</h3>
+            <a href="https://www.google.com/maps/place/Redd+Rockett's+Pizza+Port/@33.8115764,-117.9172179,153m/data=!3m1!1e3!4m5!3m4!1s0x80dcd7daed9c332b:0x82b760851100455e!8m2!3d33.81166!4d-117.916833"><img src="img/pizzaplanetarrive.gif" alt="hamburger and drink containers talking"></a>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
